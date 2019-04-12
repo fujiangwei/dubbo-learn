@@ -13,7 +13,9 @@ public class Consumer {
         System.out.println("**********************consumer start**********************");
         System.out.println("**********************************************************");
         DemoService demoService = context.getBean(DemoService.class);
-        System.out.println("consumer");
+        System.out.println("**********************************************************");
+        System.out.print("consumer is call demoService.testService() result is ");
         System.out.println(demoService.testService());
+        System.out.println("**********************************************************");
     }
 }
